@@ -1,0 +1,350 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #FFF8E9;
+    color: #49301F;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #355640;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.logo h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.mandacaru {
+    font-size: 40px;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+.banner {
+    background-color: #ECCE8B;
+    padding: 55px 20px;
+    text-align: center;
+}
+
+.banner h2 {
+    font-size: 34px;
+    line-height: 1.3;
+}
+
+.banner p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.botao {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 52px;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    background-color: #A7442B;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #80321F;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #355640;
+    outline-offset: 3px;
+}
+
+.secao {
+    max-width: 1100px;
+    width: 92%;
+    margin: 35px auto;
+}
+
+.secao h2 {
+    font-size: 30px;
+}
+
+.introducao {
+    margin-bottom: 25px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.produto {
+    background-color: white;
+    border: 1px solid #E5D8C3;
+    border-radius: 12px;
+    padding: 18px;
+    overflow-wrap: anywhere;
+}
+
+.produto img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.produto h3 {
+    font-size: 22px;
+    line-height: 1.3;
+}
+
+.descricao {
+    min-height: 52px;
+}
+
+.preco {
+    display: block;
+    color: #355640;
+    font-size: 25px;
+    margin: 12px 0;
+}
+
+.produto .botao {
+    width: 100%;
+}
+
+.carrinho-container {
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #E5D8C3;
+    border-radius: 12px;
+}
+
+.item-carrinho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 18px 0;
+    border-bottom: 1px solid #E5D8C3;
+}
+
+.info-produto {
+    flex: 1;
+    min-width: 140px;
+}
+
+.info-produto h3,
+.info-produto p {
+    margin: 4px 0;
+}
+
+.quantidade {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.quantidade button {
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    background-color: #355640;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.quantidade span {
+    min-width: 25px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.subtotal {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.resumo {
+    margin-top: 25px;
+}
+
+.resumo label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.resumo input,
+.resumo textarea {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #8A8A8A;
+    border-radius: 8px;
+    background-color: white;
+    color: #49301F;
+    font: inherit;
+    font-size: 18px;
+}
+
+.resumo textarea {
+    resize: vertical;
+}
+
+#total {
+    color: #355640;
+    font-size: 28px;
+}
+
+.finalizar {
+    width: 100%;
+    min-height: 58px;
+    margin-top: 24px;
+    background-color: #247642;
+}
+
+.finalizar:hover {
+    background-color: #18562F;
+}
+
+.ajuda {
+    text-align: center;
+    margin-top: 22px;
+}
+
+footer {
+    padding: 25px 15px;
+    background-color: #355640;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+
+     header {
+        padding: 18px 12px;
+    }
+
+    .logo {
+        gap: 7px;
+    }
+
+    .logo h1 {
+        font-size: 23px;
+    }
+
+    .mandacaru {
+        font-size: 30px;
+    }
+
+    .banner {
+        padding: 35px 18px;
+    }
+
+    .banner h2 {
+        font-size: 28px;
+    }
+
+    .banner p {
+        font-size: 18px;
+    }
+
+    .secao {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    .secao h2 {
+        font-size: 27px;
+    }
+
+    .produtos {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .produto {
+        padding: 15px;
+    }
+
+    .produto img {
+        height: 230px;
+    }
+
+    .produto h3 {
+        font-size: 22px;
+    }
+
+    .carrinho-container {
+        padding: 16px;
+    }
+
+    .item-carrinho {
+        gap: 12px;
+    }
+
+    .info-produto {
+        flex-basis: 100%;
+    }
+
+    .quantidade {
+        gap: 14px;
+    }
+
+    .quantidade button {
+        width: 52px;
+        height: 52px;
+    }
+
+    .subtotal {
+        margin-left: auto;
+    }
+
+    #total {
+        font-size: 25px;
+    }
+}

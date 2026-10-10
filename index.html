@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Marmitex da Vania</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <span class="mandacaru">🌵</span>
+            <h1>Marmitex da Vania</h1>
+        </div>
+
+        <p>Comida caseira feita com carinho!</p>
+    </header>
+
+    <main>
+
+        <section class="banner">
+            <h2>O sabor do Nordeste na sua mesa!</h2>
+
+            <p>Comida gostosa, preparada com carinho para você.</p>
+
+            <a href="#cardapio" class="botao">
+                Ver cardápio
+            </a>
+        </section>
+
+        <section id="cardapio" class="secao">
+            <h2>Nosso cardápio</h2>
+
+            <p class="introducao">
+                Escolha sua comida favorita e faça seu pedido.
+            </p>
+
+            <div id="produtos" class="produtos"></div>
+        </section>
+
+        <section id="meu-carrinho" class="secao carrinho-container">
+
+            <h2>🛒 Meu pedido</h2>
+
+            <p id="aviso-carrinho">
+                Você ainda não adicionou nenhuma marmita.
+            </p>
+
+            <div id="carrinho"></div>
+
+            <div class="resumo">
+                <h3 id="total">Total: R$ 0,00</h3>
+
+                <label for="nome-cliente">Seu nome</label>
+                <input
+                    type="text"
+                    id="nome-cliente"
+                    placeholder="Digite seu nome"
+                    autocomplete="name"
+                >
+
+                <label for="endereco">Endereço para entrega</label>
+                <textarea
+                    id="endereco"
+                    placeholder="Digite sua rua, número e bairro"
+                    rows="3"
+                    autocomplete="street-address"
+                ></textarea>
+
+                <button
+                    class="botao finalizar"
+                    onclick="finalizarPedido()"
+                >
+                    Finalizar pelo WhatsApp
+                </button>
+
+                <p class="ajuda">
+                    Precisa de ajuda? Entre em contato conosco!
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Sabor do Nordeste</p>
+        <p>Comida caseira, sabor e tradição.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
